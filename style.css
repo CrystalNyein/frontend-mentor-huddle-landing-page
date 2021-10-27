@@ -16,13 +16,13 @@ body {
 .main-container {
   position: relative;
   width: 90vw;
-  min-height: 85vh;
+  min-height: 88vh;
   margin: 0 auto;
   padding-top: 2.5rem;
 }
 #logo {
   width: 10rem;
-  margin-bottom: 5vw;
+  margin-bottom: 4rem;
 }
 .mockup-container {
   display: flex;
@@ -89,7 +89,7 @@ body {
 .attribution a:hover {
   color: hsl(254, 58%, 80%);
 }
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 720px) {
   html {
     font-size: 14px;
   }
@@ -97,6 +97,9 @@ body {
     background: url("./images/bg-mobile.svg");
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  #logo {
+    margin-bottom: 3rem;
   }
   .mockup-container img {
     max-width: 100%;
@@ -119,13 +122,16 @@ body {
     justify-content: center;
   }
 }
-@media only screen and (min-width: 711px) and (max-width: 983px) {
+@media only screen and (min-width: 721px) and (max-width: 983px) {
   html {
     font-size: 15px;
   }
   .mockup-text h1 {
     font-size: 1.8rem;
     margin-top: 0;
+  }
+  .mockup-container {
+    margin-top: 2.5rem;
   }
   .mockup-container img {
     /* max-width: 50%; */
