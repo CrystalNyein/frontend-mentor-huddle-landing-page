@@ -4,3 +4,11 @@
   --headings-font: "Poppins", sans-serif;
   --body-font: "Open Sans", sans-serif;
 }
+html {
+  background-color: var(--violet);
+}
+body {
+  background: url("./images/bg-desktop.svg");
+  min-height: 100vh;
+  margin: 0;
+}
