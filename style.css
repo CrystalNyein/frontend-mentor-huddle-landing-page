@@ -14,7 +14,10 @@ body {
   font-family: var(--body-font);
 }
 .main-container {
-  padding: 3rem 6rem;
+  width: 85vw;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 #logo {
   width: 10rem;
@@ -25,9 +28,10 @@ body {
   justify-content: space-between;
 }
 .mockup-container img {
-  width: 90rem;
-  max-width: 60%;
+  width: auto;
+  max-width: 57%;
   margin-right: 4rem;
+  height: auto;
 }
 .mockup-text {
   padding-top: 2rem;
@@ -46,7 +50,6 @@ body {
 .mockup-text button {
   margin-top: 1rem;
   padding: 0.8rem 4rem;
-  font-size: 1.05rem;
   border-radius: 2.5rem;
   border: none;
   box-shadow: 1px 1px 10px hsl(254, 60%, 30%);
@@ -55,7 +58,7 @@ body {
 }
 .social-link {
   position: absolute;
-  right: 4rem;
+  right: 7.5vw;
   bottom: 3rem;
 }
 .social-link i {
