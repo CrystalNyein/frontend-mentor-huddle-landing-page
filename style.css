@@ -16,7 +16,7 @@ body {
 .main-container {
   width: 85vw;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   padding-bottom: 1rem;
 }
 #logo {
@@ -26,6 +26,8 @@ body {
 .mockup-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
 }
 .mockup-container img {
   width: auto;
@@ -34,13 +36,14 @@ body {
   height: auto;
 }
 .mockup-text {
+  width: calc(43% - 4rem);
   padding-top: 2rem;
 }
 .mockup-text h1 {
   font-family: var(--headings-font);
   color: white;
   font-weight: 600;
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
 }
 .mockup-text p {
   color: hsl(255, 44%, 86%);
@@ -84,4 +87,31 @@ body {
 }
 .attribution a:hover {
   color: hsl(254, 58%, 80%);
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    background: url("./images/bg-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mockup-container img {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .mockup-text {
+    text-align: center;
+    width: 100%;
+  }
+  .mockup-text button {
+    padding: 1rem 5rem;
+  }
+  .social-link {
+    position: unset;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
