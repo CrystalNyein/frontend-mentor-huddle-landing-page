@@ -44,7 +44,6 @@ body {
   font-family: var(--headings-font);
   color: white;
   font-weight: 600;
-  /* font-size: 2.2rem; */
 }
 .mockup-text p {
   color: hsl(255, 44%, 86%);
@@ -133,12 +132,7 @@ body {
   .mockup-container {
     margin-top: 2.5rem;
   }
-  .mockup-container img {
-    /* max-width: 50%; */
-  }
   .mockup-text {
-    /* width: calc(50% - 3vw); */
-    /* padding-top: 1vw; */
     padding-top: 0;
   }
 }
