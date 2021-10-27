@@ -14,29 +14,30 @@ body {
   font-family: var(--body-font);
 }
 .main-container {
-  width: 85vw;
+  position: relative;
+  width: 90vw;
+  min-height: 85vh;
   margin: 0 auto;
   padding-top: 2.5rem;
-  padding-bottom: 1rem;
 }
 #logo {
   width: 10rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5vw;
 }
 .mockup-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 .mockup-container img {
-  width: auto;
   max-width: 57%;
-  margin-right: 4rem;
-  height: auto;
+  margin-right: 3vw;
+  object-fit: contain;
 }
 .mockup-text {
-  width: calc(43% - 4rem);
+  width: calc(43% - 3vw);
   padding-top: 2rem;
 }
 .mockup-text h1 {
@@ -61,8 +62,8 @@ body {
 }
 .social-link {
   position: absolute;
-  right: 7.5vw;
-  bottom: 3rem;
+  right: 0;
+  bottom: 0;
 }
 .social-link i {
   color: white;
@@ -88,7 +89,7 @@ body {
 .attribution a:hover {
   color: hsl(254, 58%, 80%);
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 710px) {
   html {
     font-size: 14px;
   }
@@ -105,6 +106,9 @@ body {
     text-align: center;
     width: 100%;
   }
+  .mockup-text h1 {
+    font-size: 1.8rem;
+  }
   .mockup-text button {
     padding: 1rem 5rem;
   }
@@ -113,5 +117,22 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+  }
+}
+@media only screen and (min-width: 711px) and (max-width: 983px) {
+  html {
+    font-size: 15px;
+  }
+  .mockup-text h1 {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  .mockup-container img {
+    /* max-width: 50%; */
+  }
+  .mockup-text {
+    /* width: calc(50% - 3vw); */
+    /* padding-top: 1vw; */
+    padding-top: 0;
   }
 }
